@@ -9,6 +9,7 @@ class Header extends Component {
     super();
 
     this.state = {
+      scroll: false,
       toggle: false,
       dropdowns: {
         staff_finders: false,
@@ -20,10 +21,15 @@ class Header extends Component {
     this.closeToggle = this.closeToggle.bind(this);
     this.staffToggle = this.staffToggle.bind(this);
     this.caseToggle = this.caseToggle.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, true);
   }
 
   openToggle = () => {
-    this.setState({ toggle: true })
+    this.setState({ toggle: !this.state.toggle })
   }
 
   closeToggle = () => {
@@ -46,13 +52,17 @@ class Header extends Component {
     }))
   }
 
+  handleScroll = () => {
+    this.setState({ scroll: (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) });
+  }
+
   render () {
     return (
       <>
       <div className={ `overlay ${this.state.toggle ? 'active' : ''}` }></div>
-      <header className="header">
+      <header className={ `header ${ this.state.scroll ? 'p-0 shadow' : '' }` }>
         <div className="container">
-          <nav className="navbar navbar-light bg-light">
+          <nav className="navbar navbar-light bg-transparent">
               <div className="menu-toggle" onClick={ this.openToggle }>
                 <span></span>
               </div>
