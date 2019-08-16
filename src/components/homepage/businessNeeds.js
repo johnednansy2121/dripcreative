@@ -5,7 +5,7 @@ const BusinessNeeds = (props) => {
         <div className="container">
             <div className="row">
                 <div className="col-12 text-center section-header">
-                    <h2 className="title">What do <span class="highlight">you need help</span> with your business?</h2>
+                    <h2 className="title">What do <span className="highlight">you need help</span> with your business?</h2>
                     <div className="desc">See how we have helped other businesses.</div>
                 </div>
 

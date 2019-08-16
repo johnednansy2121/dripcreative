@@ -6,7 +6,7 @@ const Footer = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-lg-3">
-                        <img class="footer-logo" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/logo.svg" alt="" />
+                        <img className="footer-logo" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/logo.svg" alt="" />
                         <p>We deliver a complete digital service to various clients across a range of industries. Sydney based with global reach.</p>
                     </div>
                     <div className="col-sm-12 col-lg-3 offset-lg-3">
