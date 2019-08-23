@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 function NextArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
       <div
         className={className}
         onClick={onClick}
-      />
+      >
+        <i className="fa fa-angle-right"></i>
+      </div>
     );
 }
 
 function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
     return (
       <div
         className={className}
@@ -50,19 +51,19 @@ class ProjectSlider extends Component {
                         <div className="info">
                             <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/logo-wedbroker.png" className="logo" alt=""/>
                             <p className="desc">wedBooker is an online marketplace for Couples to discover and book professional Suppliers &amp; Venues for their wedding.</p>
-                            <a href="#" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" /></a>
+                            <a href="/" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" alt="" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="slide-item">
                     <div className="slide">
                         <div className="thumb">
-                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/case-wedbooker.png" alt=""/>
+                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/case-wedbooker.png" alt="wedbooker"/>
                         </div>
                         <div className="info">
-                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/logo-wedbroker.png" className="logo" alt=""/>
+                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/logo-wedbroker.png" className="logo" alt="wedbooker"/>
                             <p className="desc">wedBooker is an online marketplace for Couples to discover and book professional Suppliers &amp; Venues for their wedding.</p>
-                            <a href="#" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" /></a>
+                            <a href="/" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" alt="" /></a>
                         </div>
                     </div>
                 </div>

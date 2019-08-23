@@ -68,7 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script src="https://kit.fontawesome.com/ead0f33a56.js"></script>
+    </Helmet>
   )
 }
 

@@ -15,6 +15,7 @@ const Footer = (props) => {
                     </div>
                     <div className="col-sm-12 col-lg-3">
                         <h2 className="block-title">Get In Touch</h2>
+                        <p><a href="mailto:hello@dripcreative.com">hello@dripcreative.com</a></p> <br />
                         <p>1 Buckingham Street <br />
                             Surry Hills, <br />
                             New South Wales, Australia

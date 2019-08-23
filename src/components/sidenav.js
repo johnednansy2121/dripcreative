@@ -7,7 +7,7 @@ const Sidenav = (props) => {
                         <li className="menu-item">
                             <a href="/" aria-current="page">homepage</a>
                         </li>
-                        <li className={ `menu-item menu-sub ${props.isStaff ? 'active' : ''}` }>
+                        {/* <li className={ `menu-item menu-sub ${props.isStaff ? 'active' : ''}` }>
                             <a href="/">Staff Finder</a>
                             <ul className="sub-menu">
                                 <li className="menu-item"><a href="/">DripCreative IT Designer</a></li>
@@ -18,7 +18,7 @@ const Sidenav = (props) => {
                                 <li className="menu-item"><a href="/">Insight IT Va</a></li>
                             </ul>
                             <span className="menu-toggle-sub" onClick={ props.staffToggle }>{ props.isStaff ? '-' : '+' }</span>
-                        </li>
+                        </li> */}
                         <li className="menu-item"><a href="/">Services</a></li>
                         <li className={ `menu-item menu-sub ${props.isCase ? 'active' : ''}` }>
                             <a href="/">Case Study</a>

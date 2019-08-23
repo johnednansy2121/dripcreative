@@ -60,24 +60,6 @@ p {
     font-weight: normal;
 }
 
-.btn {
-    padding: 11px 24px;
-    cursor: pointer;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    font-family: "Poppins", sans-serif;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 12px;
-    -webkit-appearance: none;
-    border: none;
-    outline: none;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    font-weight: 600;
-    min-width: 130px;
-}
-
 .menu-toggle {
     display: inline-block;
     width: 36px;
@@ -173,38 +155,64 @@ main {
 }
 
 .btn {
-    font-size: 12px;
     padding: 11px 24px;
-    transition: 150ms;
-
-    &:hover, .active{
-        transform: translatey(-5px);
-    }
-}
-
-.btn-black.btn-glass {
     cursor: pointer;
+    -ms-touch-action: manipulation;
     touch-action: manipulation;
-    font-family: $poppins;
+    font-family: "Poppins", sans-serif;
     display: inline-block;
     text-transform: uppercase;
     font-size: 12px;
     -webkit-appearance: none;
     border: none;
     outline: none;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
     font-weight: 600;
     min-width: 130px;
-    background: transparent;
-    box-shadow: inset 0 0 0 2px $dark-blue;
-    color: $dark-blue;
+    transition: 150ms;
 
-    &:hover, &:focus {
-        background: $dark-blue;
-        box-shadow: none;
-        color: #fff;
+    &:hover, .active{
+        transform: translatey(-5px);
+    }
+
+    &.btn-glass {
+        cursor: pointer;
+        touch-action: manipulation;
+        font-family: $poppins;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 12px;
+        -webkit-appearance: none;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-weight: 600;
+        min-width: 130px;
+        background: transparent;
+        box-shadow: inset 0 0 0 2px $dark-blue;
+        color: $dark-blue;
+    
+        &:hover, &:focus {
+            background: $dark-blue;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+
+    &.btn-gray {
+        box-shadow: inset 0 0 0 2px $gray;
+        color: $gray;
+    
+        &:hover, &:focus {
+            background: $gray;
+            box-shadow: none;
+            color: #fff;
+        }
     }
 }
+
+
 
 .header {
     padding-top: 70px;
@@ -331,7 +339,7 @@ section {
     padding: 95px 0;
     position: relative;
 
-    &.contactus {
+    &.projects {
         background-color: #3582c4;
         background-image: url("https://dc19.dripdev.com/wp-content/themes/dc/assets/images/bg-tex.png");
     }
@@ -474,7 +482,7 @@ section {
         }
     }
 
-    &.contactus {
+    &.projects {
         padding-top: 170px;
 
         .projectSlider {
@@ -545,12 +553,6 @@ section {
         background-color: $dirty-white;
         text-align: center;
 
-        .section-header {
-            h3 {
-
-            }
-        }
-
         .section-content {
             h2 {
                 font-size: 16px;
@@ -565,6 +567,76 @@ section {
                     }
                 }
             }
+        }
+    }
+}
+
+.section-contact {
+    .section-header {
+        margin-bottom: 90px;
+
+        h2.title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 45px;
+            margin-bottom: 0;
+        }
+
+        .desc {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            color: #121926;
+            margin-top: 10px;
+        }
+    }
+
+    .group {
+        position: relative;
+        margin-bottom: 45px;
+
+        .form-control-wrap {
+            position: relative;
+
+            &.active {
+                input, select, textarea  {
+                    border-bottom: 1px solid #3582c4;
+                }
+
+                ~ label {
+                    top: -20px;
+                    font-size: 11px;
+                    color: #3582c4;
+                }
+            }
+
+            input, select, textarea {
+                font-size: 18px;
+                padding: 10px 10px 10px 5px;
+                -webkit-appearance: none;
+                display: block;
+                color: #636363;
+                width: 100%;
+                border: none;
+                border-radius: 0;
+                border-bottom: 1px solid #757575;
+                background: transparent;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        label {
+            color: #999;
+            font-size: 14px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 0;
+            top: 10px;
+            transition: all 0.2s ease;
         }
     }
 }
@@ -597,6 +669,11 @@ footer {
     .footer-logo {
         max-width: 170px;
         margin-bottom: 40px;
+    }
+
+    a {
+        border-bottom: 1px solid;
+        color: #3582c4;
     }
 }
 
