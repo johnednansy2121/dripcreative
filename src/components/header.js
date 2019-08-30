@@ -12,14 +12,14 @@ class Header extends Component {
       scroll: false,
       toggle: false,
       dropdowns: {
-        staff_finders: false,
+        services: false,
         case_study: false,
       }
     }
 
     this.openToggle = this.openToggle.bind(this);
     this.closeToggle = this.closeToggle.bind(this);
-    this.staffToggle = this.staffToggle.bind(this);
+    this.servicesToggle = this.servicesToggle.bind(this);
     this.caseToggle = this.caseToggle.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -36,10 +36,10 @@ class Header extends Component {
     this.setState({ toggle: false })
   }
 
-  staffToggle = () => {
+  servicesToggle = () => {
     this.setState(prevState => ({
       dropdowns: {
-        staff_finders: !prevState.dropdowns.staff_finders
+        services: !prevState.dropdowns.services
       }
     }))
   }
@@ -73,7 +73,7 @@ class Header extends Component {
               <a href="/" className="btn btn-black btn-glass">get in touch</a>
           </nav>
         </div>
-        <Sidenav isToggle={this.state.toggle} closeToggle={ this.closeToggle } staffToggle={ this.staffToggle } caseToggle={ this.caseToggle } isStaff={ this.state.dropdowns.staff_finders } isCase={ this.state.dropdowns.case_study } />
+        <Sidenav isToggle={this.state.toggle} closeToggle={ this.closeToggle } servicesToggle={ this.servicesToggle } caseToggle={ this.caseToggle } isServices={ this.state.dropdowns.services } isCase={ this.state.dropdowns.case_study } />
       </header>
       </>
     );

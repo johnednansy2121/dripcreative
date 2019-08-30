@@ -5,8 +5,8 @@ import SEO from "../components/seo"
 import Hero from "../components/homepage/hero"
 import BusinessNeeds from "../components/homepage/businessNeeds"
 import Projects from "../components/homepage/projects"
-import ContactUs from "../components/homepage/contactus"
-import TrustedBy from "../components/homepage/trustedby"
+import ContactUs from "../components/contactus"
+import TrustedBy from "../components/trustedby"
 
 const IndexPage = () => (
   <Layout>

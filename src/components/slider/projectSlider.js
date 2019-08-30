@@ -4,25 +4,27 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
-function NextArrow(props) {
-    const { className, onClick } = props;
-    return (
-      <div
-        className={className}
-        onClick={onClick}
-      >
-        <i className="fa fa-angle-right"></i>
-      </div>
-    );
-}
-
 function PrevArrow(props) {
     const { className, onClick } = props;
     return (
-      <div
-        className={className}
-        onClick={onClick}
-      />
+        <div 
+            className="projects-arrow slide-prev"
+            onClick={onClick}
+        >
+            <i className="fa fa-angle-left"></i>
+        </div>
+    );
+}
+
+function NextArrow(props) {
+    const { className, onClick } = props;
+    return (
+        <div 
+            className="projects-arrow slide-next"
+            onClick={onClick}
+        >
+            <i className="fa fa-angle-right"></i>
+        </div>
     );
 }
 
@@ -51,19 +53,19 @@ class ProjectSlider extends Component {
                         <div className="info">
                             <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/logo-wedbroker.png" className="logo" alt=""/>
                             <p className="desc">wedBooker is an online marketplace for Couples to discover and book professional Suppliers &amp; Venues for their wedding.</p>
-                            <a href="/" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" alt="" /></a>
+                            <a href="/case-study/wedbooker/" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" alt="" /></a>
                         </div>
                     </div>
                 </div>
                 <div className="slide-item">
                     <div className="slide">
                         <div className="thumb">
-                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/case-wedbooker.png" alt="wedbooker"/>
+                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/08/case-study-attender-2.png" alt="wedbooker"/>
                         </div>
                         <div className="info">
-                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/06/logo-wedbroker.png" className="logo" alt="wedbooker"/>
-                            <p className="desc">wedBooker is an online marketplace for Couples to discover and book professional Suppliers &amp; Venues for their wedding.</p>
-                            <a href="/" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" alt="" /></a>
+                            <img src="https://dc19.dripdev.com/wp-content/uploads/2019/08/attender-logo-tp-2.png" className="logo" alt="wedbooker"/>
+                            <p className="desc">Attender encapsulates the needs of hospitality venues and workers in one platform. Hospitality work made simple.</p>
+                            <a href="/case-study/attender/" className="icon-arrow arrow-white btn btn-white btn-glass">read case study <img className="btn-more" src="https://dc19.dripdev.com/wp-content/themes/dc/assets/images/arrow-white.svg" alt="" /></a>
                         </div>
                     </div>
                 </div>

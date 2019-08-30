@@ -1,12 +1,12 @@
 import React from 'react';
-import BrandSlider from '../slider/brandSlider';
+import BrandSlider from './slider/brandSlider';
 
 const TrustedBy = (props) => {
     return (
         <section className="trusted-by curve">
             <div className="container">
                 <div className="section-header">
-                    <h3 className="title">“The sole reason we are in business is to make life less difficult for our clients”</h3>
+                    <h3 className="title">“The sole reason we are in business is to support our clients' success”</h3>
                 </div>
 
                 <div className="section-content">

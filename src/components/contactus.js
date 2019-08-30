@@ -34,54 +34,20 @@ class Contact extends Component {
                                     </div>
                                     <form action="" method="post" className="form" noValidate="novalidate">
                                         <div className="row">
-                                            <div className="col-md-6">
+                                            <div className="col-md-12">
                                                 <div className="group">
                                                     <span className={ `form-control-wrap ${inputClass}` }>
                                                         <input type="text" name="name" value="" size="40" className="form-control" onFocus={this.onFocus} />
                                                     </span>
-                                                    <label>Your full name</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="group">
-                                                    <span className={ `form-control-wrap ${inputClass}` }>
-                                                        <input type="email" name="email" value="" size="40" className="form-control" onFocus={this.onFocus} />
-                                                    </span>
-                                                    <label>Your email address</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="group">
-                                                    <span className={ `form-control-wrap ${inputClass}` }>
-                                                        <select name="budget" className="form-control" aria-invalid="false" onFocus={this.onFocus} >
-                                                            <option value=""></option>
-                                                            <option value="1000">1000</option>
-                                                            <option value="2000">2000</option>
-                                                            <option value="3000">3000</option>
-                                                        </select>
-                                                    </span>
-                                                    <label>Your budget</label>
-                                                </div>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <div className="group">
-                                                    <span className={ `form-control-wrap ${inputClass}` }>
-                                                        <select name="project" className="form-control" aria-invalid="false" onFocus={this.onFocus} >
-                                                            <option value=""></option>
-                                                            <option value="WordPres">WordPres</option>
-                                                            <option value="API">API</option>
-                                                            <option value="Custom">Custom</option>
-                                                        </select>
-                                                    </span>
-                                                    <label>Type of project</label>
+                                                    <label>Your name</label>
                                                 </div>
                                             </div>
                                             <div className="col-md-12">
                                                 <div className="group">
                                                     <span className={ `form-control-wrap ${inputClass}` }>
-                                                        <textarea name="help" cols="40" rows="7" className="form-control" aria-invalid="false" onFocus={this.onFocus} ></textarea>
+                                                        <input type="email" name="email" value="" size="40" className="form-control" onFocus={this.onFocus} />
                                                     </span>
-                                                    <label>How can we help you</label>
+                                                    <label>Your email address</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -91,7 +57,7 @@ class Contact extends Component {
                                     </form>
                                 </div>
 
-                                <div className="col-md-5 col-md-offset-1">
+                                <div className="col-md-5 offset-1">
                                     <br/>
                                     <br/>
                                     <br/>

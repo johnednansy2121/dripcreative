@@ -5,29 +5,31 @@ const Sidenav = (props) => {
                 <div className="side-container">
                     <ul className="menu">
                         <li className="menu-item">
-                            <a href="/" aria-current="page">homepage</a>
+                            <a href="/" aria-current="page">Home</a>
                         </li>
-                        {/* <li className={ `menu-item menu-sub ${props.isStaff ? 'active' : ''}` }>
-                            <a href="/">Staff Finder</a>
+                        <li className={ `menu-item menu-sub ${props.isServices ? 'active' : ''}` }>
+                            <a href="/services/website-design-development/">Services</a>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="/">DripCreative IT Designer</a></li>
-                                <li className="menu-item"><a href="/">DripCreative IT Developer</a></li>
-                                <li className="menu-item"><a href="/">Insight IT designer</a></li>
-                                <li className="menu-item"><a href="/">contact us</a></li>
-                                <li className="menu-item"><a href="/">Insight It Developer</a></li>
-                                <li className="menu-item"><a href="/">Insight IT Va</a></li>
+                                <li className="menu-item"><a href="/services/website-design-development">Website Design & Development</a></li>
+                                <li className="menu-item"><a href="/services/app-design-development">App Design & Development</a></li>
+                                <li className="menu-item"><a href="/services/support-solutions">Support Solutions</a></li>
+                                <li className="menu-item"><a href="/services/automation">Automation</a></li>
+                                <li className="menu-item"><a href="/services/integrations">Integrations</a></li>
+                                <li className="menu-item"><a href="/services/onboarding-strategy">Onboarding Strategy</a></li>
+                                <li className="menu-item"><a href="/services/outsourcing">Outsourcing</a></li>
                             </ul>
-                            <span className="menu-toggle-sub" onClick={ props.staffToggle }>{ props.isStaff ? '-' : '+' }</span>
-                        </li> */}
-                        <li className="menu-item"><a href="/">Services</a></li>
+                            <span className="menu-toggle-sub" onClick={ props.servicesToggle }>{ props.isServices ? '-' : '+' }</span>
+                        </li>
+                        {/* <li className="menu-item"><a href="/">Services</a></li> */}
                         <li className={ `menu-item menu-sub ${props.isCase ? 'active' : ''}` }>
                             <a href="/">Case Study</a>
                             <ul className="sub-menu">
-                                <li className="menu-item"><a href="/">Wedbooker</a></li>
+                                <li className="menu-item"><a href="/case-study/attender">Attender</a></li>
+                                <li className="menu-item"><a href="/case-study/wedbooker">Wedbooker</a></li>
                             </ul>
                             <span className="menu-toggle-sub" onClick={ props.caseToggle }>{ props.isCase ? '-' : '+' }</span>
                         </li>
-                        <li className="menu-item"><a href="/">contact us</a></li>
+                        <li className="menu-item"><a href="/contact-us">contact us</a></li>
                     </ul>
                 </div>
                 <div className="menu-toggle toggle-close" onClick={ props.closeToggle }><span></span></div>
